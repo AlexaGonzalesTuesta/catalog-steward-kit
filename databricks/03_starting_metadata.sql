@@ -1,0 +1,23 @@
+-- 3. Recreates the starting metadata (comments and tags) the demo begins with.
+COMMENT ON TABLE workspace.vehicle_safety.recalls IS 'NHTSA safety recall campaigns for GM vehicles, one row per campaign per make, model and model year.';
+ALTER TABLE workspace.vehicle_safety.recalls SET TAGS ('data_owner' = 'safety-data-owners@example.com', 'steward' = 'ana.ruiz@example.com', 'classification' = 'public');
+ALTER TABLE workspace.vehicle_safety.recalls ALTER COLUMN campaign_number COMMENT 'NHTSA recall campaign number, for example 24V123000.';
+ALTER TABLE workspace.vehicle_safety.recalls ALTER COLUMN make COMMENT 'Vehicle make as reported to NHTSA.';
+ALTER TABLE workspace.vehicle_safety.recalls ALTER COLUMN model COMMENT 'Vehicle model as reported to NHTSA.';
+ALTER TABLE workspace.vehicle_safety.recalls ALTER COLUMN model_year COMMENT 'Model year covered by the campaign.';
+ALTER TABLE workspace.vehicle_safety.recalls ALTER COLUMN component COMMENT 'NHTSA component category affected by the defect.';
+ALTER TABLE workspace.vehicle_safety.recalls ALTER COLUMN summary COMMENT 'Plain-language description of the defect.';
+ALTER TABLE workspace.vehicle_safety.recalls ALTER COLUMN consequence COMMENT 'Safety risk if the defect is not repaired.';
+ALTER TABLE workspace.vehicle_safety.recalls ALTER COLUMN remedy COMMENT 'Repair the manufacturer will perform.';
+ALTER TABLE workspace.vehicle_safety.recalls ALTER COLUMN report_received_date COMMENT 'Date NHTSA received the manufacturer\'s defect report.';
+ALTER TABLE workspace.vehicle_safety.recalls ALTER COLUMN park_it COMMENT 'NHTSA advises owners not to drive the vehicle until repaired.';
+COMMENT ON TABLE workspace.vehicle_safety.complaints IS 'Owner complaints filed with NHTSA\'s Office of Defects Investigation for GM vehicles.';
+ALTER TABLE workspace.vehicle_safety.complaints SET TAGS ('steward' = 'ana.ruiz@example.com');
+ALTER TABLE workspace.vehicle_safety.complaints ALTER COLUMN odi_number COMMENT 'NHTSA complaint number.';
+ALTER TABLE workspace.vehicle_safety.complaints ALTER COLUMN filed_date COMMENT 'Date the complaint was filed.';
+ALTER TABLE workspace.fuel_economy.vehicles SET TAGS ('data_owner' = 'emissions-compliance@example.com', 'steward' = 'marcus.lee@example.com', 'classification' = 'public');
+ALTER TABLE workspace.fuel_economy.vehicles ALTER COLUMN vehicle_id COMMENT 'EPA vehicle record id.';
+ALTER TABLE workspace.fuel_economy.vehicles ALTER COLUMN combined_mpg COMMENT 'Combined city and highway MPG (MPGe for electric vehicles).';
+COMMENT ON TABLE workspace.customer_care.owner_contacts IS 'Contact details for vehicle owners, used to send recall notices.';
+ALTER TABLE workspace.customer_care.owner_contacts ALTER COLUMN customer_id COMMENT 'Internal customer number.';
+ALTER TABLE workspace.customer_care.owner_contacts ALTER COLUMN customer_id SET TAGS ('classification' = 'internal');

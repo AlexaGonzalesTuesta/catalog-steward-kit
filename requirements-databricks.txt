@@ -1,0 +1,2 @@
+-r requirements.txt
+databricks-sql-connector>=3.0,<5

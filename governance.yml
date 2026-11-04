@@ -1,0 +1,147 @@
+# Governance configuration for the catalog this kit scans.
+# Edit this file to point the kit at your own catalog: domains, stewards and quality rules.
+
+catalog: workspace            # Unity Catalog name. Databricks Free Edition creates "workspace".
+display_name: GM vehicle data (demo catalog)
+
+# Tag names written to Unity Catalog. Change them to match your organization's tag policy.
+tags:
+  classification: classification
+  pii_type: pii_type
+  data_owner: data_owner
+  steward: steward
+
+# Ordered from least to most sensitive.
+classification_levels: [public, internal, confidential, restricted]
+pii_level: restricted         # level suggested for a table once any column is confirmed as PII
+not_pii_level: internal       # level written to a column a steward marks "Not PII"
+
+# Suggest a PII tag when a column scores at or above this confidence (0 to 1).
+pii_suggestion_threshold: 0.5
+
+domains:
+  vehicle_safety:
+    name: Vehicle Safety
+    steward: ana.ruiz@example.com
+    default_owner: safety-data-owners@example.com
+  fuel_economy:
+    name: Fuel Economy and Emissions
+    steward: marcus.lee@example.com
+    default_owner: emissions-compliance@example.com
+  customer_care:
+    name: Customer Care
+    steward: priya.shah@example.com
+    default_owner: customer-data-owners@example.com
+  dealer_service:
+    name: Dealer Service
+    steward: dev.okafor@example.com
+    default_owner: dealer-ops-data@example.com
+
+# Fictional stewards. Onboarding status is maintained by the governance team.
+stewards:
+  - email: ana.ruiz@example.com
+    name: Ana Ruiz
+    domain: vehicle_safety
+    onboarding: {required_learning: true, catalog_access: true, first_review: true}
+  - email: marcus.lee@example.com
+    name: Marcus Lee
+    domain: fuel_economy
+    onboarding: {required_learning: true, catalog_access: true, first_review: false}
+  - email: priya.shah@example.com
+    name: Priya Shah
+    domain: customer_care
+    onboarding: {required_learning: true, catalog_access: false, first_review: false}
+  - email: dev.okafor@example.com
+    name: Dev Okafor
+    domain: dealer_service
+    onboarding: {required_learning: false, catalog_access: false, first_review: false}
+
+# Quality rules. Checks: not_null, unique, accepted_values, range, pattern, freshness, relationship, condition.
+quality_rules:
+  - id: VS-01
+    table: vehicle_safety.recalls
+    check: unique
+    columns: [campaign_number, make, model, model_year]
+    severity: high
+    description: One row per recall campaign per vehicle.
+  - id: VS-02
+    table: vehicle_safety.recalls
+    column: report_received_date
+    check: freshness
+    max_age_days: 120
+    severity: medium
+    description: New GM recall reports should arrive at least every 120 days.
+  - id: VS-03
+    table: vehicle_safety.recalls
+    column: remedy
+    check: not_null
+    severity: medium
+    description: Every recall needs a remedy so dealers know the fix.
+  - id: VS-04
+    table: vehicle_safety.complaints
+    check: unique
+    columns: [odi_number, make, model, model_year]
+    severity: high
+    description: One row per complaint per vehicle.
+  - id: VS-05
+    table: vehicle_safety.complaints
+    column: injuries
+    check: range
+    min: 0
+    max: 100
+    severity: low
+    description: Injury counts must be zero or more.
+  - id: FE-01
+    table: fuel_economy.vehicles
+    column: combined_mpg
+    check: range
+    min: 5
+    max: 150
+    severity: medium
+    description: Combined MPG (or MPGe for EVs) must be in a physical range.
+  - id: FE-02
+    table: fuel_economy.vehicles
+    column: vehicle_id
+    check: unique
+    severity: high
+    description: EPA vehicle id is the primary key.
+  - id: CC-01
+    table: customer_care.owner_contacts
+    column: customer_id
+    check: unique
+    severity: high
+    description: Each customer appears once.
+  - id: CC-02
+    table: customer_care.owner_contacts
+    column: email
+    check: pattern
+    pattern: '[^@\s]+@[^@\s]+\.[A-Za-z]{2,}'
+    severity: medium
+    description: Emails must be valid so recall notices can be delivered.
+  - id: CC-03
+    table: customer_care.owner_contacts
+    column: vin
+    check: pattern
+    pattern: '[A-HJ-NPR-Z0-9]{17}'
+    severity: high
+    description: VINs must be 17 characters with no I, O or Q.
+  - id: DS-01
+    table: dealer_service.service_appointments
+    column: recall_campaign_number
+    check: relationship
+    references: vehicle_safety.recalls.campaign_number
+    severity: high
+    description: Recall repairs must point to a real NHTSA campaign.
+  - id: DS-02
+    table: dealer_service.service_appointments
+    check: condition
+    condition: completed_at IS NULL OR completed_at >= appointment_date
+    severity: medium
+    description: A repair cannot be completed before its appointment.
+  - id: DS-03
+    table: dealer_service.service_appointments
+    column: status
+    check: accepted_values
+    values: [scheduled, completed, cancelled, no_show]
+    severity: low
+    description: Status must use the standard values.

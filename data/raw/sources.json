@@ -1,0 +1,45 @@
+{
+  "epa_vehicles": {
+    "source": "EPA fueleconomy.gov vehicles.csv",
+    "url": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
+    "fetched_at": "2026-11-04T20:43:01Z",
+    "rows": 2240,
+    "scope": "Chevrolet, GMC, Buick, Cadillac, 2015+"
+  },
+  "nhtsa_recalls": {
+    "source": "NHTSA Recalls API",
+    "url": "https://api.nhtsa.gov/recalls/recallsByVehicle",
+    "fetched_at": "2026-11-04T20:43:01Z",
+    "rows": 234,
+    "scope": "GM vehicles, model years 2021-2025",
+    "vehicles_without_data": [
+      "2021 CADILLAC LYRIQ",
+      "2021 CHEVROLET TRAX",
+      "2022 CADILLAC LYRIQ",
+      "2022 CHEVROLET TRAX",
+      "2023 BUICK ENCLAVE",
+      "2023 BUICK ENCORE GX",
+      "2023 CHEVROLET TRAX",
+      "2024 BUICK ENCLAVE",
+      "2024 CHEVROLET BOLT EV",
+      "2024 CHEVROLET TRAVERSE",
+      "2024 GMC ACADIA",
+      "2025 BUICK ENCLAVE",
+      "2025 BUICK ENVISION",
+      "2025 CHEVROLET BOLT EV",
+      "2025 CHEVROLET EQUINOX",
+      "2025 CHEVROLET SILVERADO 1500",
+      "2025 CHEVROLET TRAVERSE",
+      "2025 GMC ACADIA",
+      "2025 GMC TERRAIN"
+    ],
+    "failed_requests": []
+  },
+  "nhtsa_complaints": {
+    "source": "NHTSA Complaints API",
+    "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle",
+    "fetched_at": "2026-11-04T20:43:01Z",
+    "rows": 11107,
+    "scope": "GM vehicles, model years 2021-2025"
+  }
+}

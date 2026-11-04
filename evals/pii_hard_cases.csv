@@ -1,0 +1,21 @@
+column,values,is_pii,pii_type,why_it_is_hard
+contact,maria.g@example.com|j.lee@example.net|w.chen@example.org|t.moore@example.com,yes,email,Emails with no hint in the column name
+mobile,313-555-0101|586.555.0144|(248) 555-0190|+1 317 555 0123,yes,phone,Phone numbers in mixed formats
+owner_name,Maria Garcia|James Smith|Wei Chen|Aaliyah Brown,yes,person_name,Full names in one column
+postal_code,48201-1234|60601|46204-0001|53202,yes,postal_code,ZIP and ZIP+4
+ssn,123-45-6789|987-65-4321|111-22-3333|222-33-4444,yes,government_id,Social Security numbers
+birth_date,1984-03-12|1990-11-02|1975-07-29|2001-01-15,yes,date_of_birth,Dates of birth
+vehicle_vin,1GNEVHKW5PJ123456|1GTU9DED1NZ543210|1G1FZ6S06P4111111|1GYKPDRS5NZ222222,yes,vin,VINs with a custom column name
+service_notes,"Called owner, left voicemail.|Owner prefers text at 313 555 0147.|Part arrived.|Loaner ready.",yes,free_text,One note in four holds a phone number
+home_address,4512 Maple St|88 Woodward Ave|1200 Jefferson Ave Apt 4|15 Cedar Ct,yes,street_address,"Addresses, one with an apartment number"
+dealer_phone,(313) 555-0100|(313) 555-0100|(586) 555-0122|(248) 555-0133,no,,"Business phone numbers, not personal data under this policy"
+support_email,support@example.com|help@example.com|recalls@example.com|parts@example.com,no,,Shared business mailboxes
+part_serial,ABCDEFGH123456789|ZZZZZZZZZ99999999|PRT20240001X55555|SN000000000000001,no,,17-character serials that fail the VIN check digit
+vin_prefix,1GNAXUEV0L|1GCUYDED5M|1G1FZ6S0|1GKS2CKL,no,,Partial VINs
+model,EQUINOX|TAHOE|SIERRA 1500|LYRIQ,no,,Vehicle models
+city,Detroit|Warren|Lansing|Toledo,no,,Cities alone are not PII under this policy
+dealer_code,D-1042|D-1187|D-2210|D-3018,no,,Internal codes
+summary,The air bag may not deploy.|Steering may lock.|Brake fluid may leak.|Camera image may not display.,no,,Recall text without personal data
+campaign_number,24V123000|25V001000|23V456000|22V789000,no,,Recall campaign numbers
+order_total,1200.50|89.99|450.00|39.95,no,,Money amounts
+created_at,2024-03-12|2025-11-02|2023-07-29|2026-01-15,no,,"Record dates, not birth dates"

@@ -1,0 +1,53 @@
+name: Scan and publish
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 11 * * 1"   # every Monday: refresh NHTSA and EPA data and rescan
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt playwright pillow
+      - name: Download the latest NHTSA and EPA data
+        run: python -m steward_kit fetch || echo "::warning::Live download failed. Using the data committed in data/raw."
+      - name: Build the demo catalog, scan it and run the evals
+        run: |
+          python -m steward_kit build-demo
+          python -m steward_kit scan
+          python -m steward_kit eval || echo "::warning::Evals below threshold on this week's data. See evals/results.json."
+          cp evals/results.json site/data/evals.json
+      - name: Capture the README screenshot and demo GIF
+        run: |
+          python -m playwright install --with-deps chromium
+          python scripts/capture_demo.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+  deploy:
+    needs: scan
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

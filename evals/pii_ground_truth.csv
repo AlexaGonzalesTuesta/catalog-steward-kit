@@ -1,0 +1,68 @@
+column,is_pii,pii_type,reason
+customer_care.owner_contacts.customer_id,no,,Not personal data
+customer_care.owner_contacts.first_name,yes,person_name,Identifies or contacts a specific person
+customer_care.owner_contacts.last_name,yes,person_name,Identifies or contacts a specific person
+customer_care.owner_contacts.email,yes,email,Identifies or contacts a specific person
+customer_care.owner_contacts.phone,yes,phone,Identifies or contacts a specific person
+customer_care.owner_contacts.street_address,yes,street_address,Identifies or contacts a specific person
+customer_care.owner_contacts.city,no,,Quasi-identifier; not PII on its own under this policy
+customer_care.owner_contacts.state,no,,Quasi-identifier; not PII on its own under this policy
+customer_care.owner_contacts.zip,yes,postal_code,Identifies or contacts a specific person
+customer_care.owner_contacts.vin,yes,vin,Identifies or contacts a specific person
+customer_care.owner_contacts.preferred_dealer,no,,Not personal data
+customer_care.owner_contacts.marketing_opt_in,no,,Not personal data
+customer_care.owner_contacts.created_at,no,,Not personal data
+dealer_service.service_appointments.appointment_id,no,,Not personal data
+dealer_service.service_appointments.vin,yes,vin,Identifies or contacts a specific person
+dealer_service.service_appointments.dealer_code,no,,Not personal data
+dealer_service.service_appointments.appointment_date,no,,Not personal data
+dealer_service.service_appointments.service_type,no,,Not personal data
+dealer_service.service_appointments.recall_campaign_number,no,,Not personal data
+dealer_service.service_appointments.status,no,,Not personal data
+dealer_service.service_appointments.completed_at,no,,Not personal data
+dealer_service.service_appointments.customer_notes,yes,free_text,Identifies or contacts a specific person
+fuel_economy.vehicles.vehicle_id,no,,Not personal data
+fuel_economy.vehicles.model_year,no,,Not personal data
+fuel_economy.vehicles.make,no,,Not personal data
+fuel_economy.vehicles.model,no,,Not personal data
+fuel_economy.vehicles.vehicle_class,no,,Not personal data
+fuel_economy.vehicles.drive,no,,Not personal data
+fuel_economy.vehicles.transmission,no,,Not personal data
+fuel_economy.vehicles.cylinders,no,,Not personal data
+fuel_economy.vehicles.displacement_l,no,,Not personal data
+fuel_economy.vehicles.fuel_type,no,,Not personal data
+fuel_economy.vehicles.alt_fuel_type,no,,Not personal data
+fuel_economy.vehicles.city_mpg,no,,Not personal data
+fuel_economy.vehicles.highway_mpg,no,,Not personal data
+fuel_economy.vehicles.combined_mpg,no,,Not personal data
+fuel_economy.vehicles.co2_grams_per_mile,no,,Not personal data
+fuel_economy.vehicles.annual_fuel_cost_usd,no,,Not personal data
+fuel_economy.vehicles.ev_range_miles,no,,Not personal data
+vehicle_safety.complaints.odi_number,no,,Not personal data
+vehicle_safety.complaints.manufacturer,no,,Not personal data
+vehicle_safety.complaints.make,no,,Not personal data
+vehicle_safety.complaints.model,no,,Not personal data
+vehicle_safety.complaints.model_year,no,,Not personal data
+vehicle_safety.complaints.crash,no,,Not personal data
+vehicle_safety.complaints.fire,no,,Not personal data
+vehicle_safety.complaints.injuries,no,,Not personal data
+vehicle_safety.complaints.deaths,no,,Not personal data
+vehicle_safety.complaints.incident_date,no,,Not personal data
+vehicle_safety.complaints.filed_date,no,,Not personal data
+vehicle_safety.complaints.vin_prefix,no,,Partial VIN published by NHTSA; cannot identify an owner
+vehicle_safety.complaints.components,no,,Not personal data
+vehicle_safety.complaints.summary,no,,"Public NHTSA text, redacted by NHTSA before publication"
+vehicle_safety.recalls.campaign_number,no,,Not personal data
+vehicle_safety.recalls.manufacturer,no,,Not personal data
+vehicle_safety.recalls.make,no,,Not personal data
+vehicle_safety.recalls.model,no,,Not personal data
+vehicle_safety.recalls.model_year,no,,Not personal data
+vehicle_safety.recalls.component,no,,Not personal data
+vehicle_safety.recalls.summary,no,,"Public NHTSA text, redacted by NHTSA before publication"
+vehicle_safety.recalls.consequence,no,,Not personal data
+vehicle_safety.recalls.remedy,no,,Not personal data
+vehicle_safety.recalls.notes,no,,Not personal data
+vehicle_safety.recalls.report_received_date,no,,Not personal data
+vehicle_safety.recalls.park_it,no,,Not personal data
+vehicle_safety.recalls.park_outside,no,,Not personal data
+vehicle_safety.recalls.over_the_air_update,no,,Not personal data

@@ -1,0 +1,772 @@
+{
+ "recalls": [
+  {
+   "Manufacturer": "General Motors, LLC",
+   "NHTSACampaignNumber": "22V100000",
+   "parkIt": false,
+   "parkOutSide": false,
+   "overTheAirUpdate": true,
+   "ReportReceivedDate": "25/03/2022",
+   "Component": "AIR BAGS",
+   "Summary": "TEST FIXTURE 0: recall summary text used only by automated tests.",
+   "Consequence": "TEST FIXTURE consequence text.",
+   "Remedy": "TEST FIXTURE remedy text.",
+   "Notes": "",
+   "ModelYear": "2021",
+   "Make": "CHEVROLET",
+   "Model": "EQUINOX",
+   "_make": "CHEVROLET",
+   "_model": "EQUINOX",
+   "_year": 2021
+  },
+  {
+   "Manufacturer": "General Motors, LLC",
+   "NHTSACampaignNumber": "23V107000",
+   "parkIt": false,
+   "parkOutSide": false,
+   "overTheAirUpdate": false,
+   "ReportReceivedDate": "13/11/2023",
+   "Component": "STEERING",
+   "Summary": "TEST FIXTURE 1: recall summary text used only by automated tests.",
+   "Consequence": "TEST FIXTURE consequence text.",
+   "Remedy": "TEST FIXTURE remedy text.",
+   "Notes": "",
+   "ModelYear": "2022",
+   "Make": "CHEVROLET",
+   "Model": "SILVERADO 1500",
+   "_make": "CHEVROLET",
+   "_model": "SILVERADO 1500",
+   "_year": 2022
+  },
+  {
+   "Manufacturer": "General Motors, LLC",
+   "NHTSACampaignNumber": "24V114000",
+   "parkIt": false,
+   "parkOutSide": false,
+   "overTheAirUpdate": false,
+   "ReportReceivedDate": "02/02/2024",
+   "Component": "ELECTRICAL SYSTEM",
+   "Summary": "TEST FIXTURE 2: recall summary text used only by automated tests.",
+   "Consequence": "TEST FIXTURE consequence text.",
+   "Remedy": "TEST FIXTURE remedy text.",
+   "Notes": "",
+   "ModelYear": "2023",
+   "Make": "GMC",
+   "Model": "SIERRA 1500",
+   "_make": "GMC",
+   "_model": "SIERRA 1500",
+   "_year": 2023
+  },
+  {
+   "Manufacturer": "General Motors, LLC",
+   "NHTSACampaignNumber": "25V121000",
+   "parkIt": true,
+   "parkOutSide": false,
+   "overTheAirUpdate": false,
+   "ReportReceivedDate": "27/09/2025",
+   "Component": "SERVICE BRAKES, HYDRAULIC",
+   "Summary": "TEST FIXTURE 3: recall summary text used only by automated tests.",
+   "Consequence": "TEST FIXTURE consequence text.",
+   "Remedy": "TEST FIXTURE remedy text.",
+   "Notes": "",
+   "ModelYear": "2024",
+   "Make": "BUICK",
+   "Model": "ENCLAVE",
+   "_make": "BUICK",
+   "_model": "ENCLAVE",
+   "_year": 2024
+  },
+  {
+   "Manufacturer": "General Motors, LLC",
+   "NHTSACampaignNumber": "22V128000",
+   "parkIt": false,
+   "parkOutSide": false,
+   "overTheAirUpdate": true,
+   "ReportReceivedDate": "04/06/2022",
+   "Component": "SEAT BELTS",
+   "Summary": "TEST FIXTURE 4: recall summary text used only by automated tests.",
+   "Consequence": "TEST FIXTURE consequence text.",
+   "Remedy": "TEST FIXTURE remedy text.",
+   "Notes": "",
+   "ModelYear": "2025",
+   "Make": "CADILLAC",
+   "Model": "LYRIQ",
+   "_make": "CADILLAC",
+   "_model": "LYRIQ",
+   "_year": 2025
+  },
+  {
+   "Manufacturer": "General Motors, LLC",
+   "NHTSACampaignNumber": "23V135000",
+   "parkIt": false,
+   "parkOutSide": false,
+   "overTheAirUpdate": false,
+   "ReportReceivedDate": "19/01/2023",
+   "Component": "POWER TRAIN",
+   "Summary": "TEST FIXTURE 5: recall summary text used only by automated tests.",
+   "Consequence": "TEST FIXTURE consequence text.",
+   "Remedy": "",
+   "Notes": "",
+   "ModelYear": "2021",
+   "Make": "CHEVROLET",
+   "Model": "BOLT EV",
+   "_make": "CHEVROLET",
+   "_model": "BOLT EV",
+   "_year": 2021
+  },
+  {
+   "Manufacturer": "General Motors, LLC",
+   "NHTSACampaignNumber": "24V142000",
+   "parkIt": false,
+   "parkOutSide": false,
+   "overTheAirUpdate": false,
+   "ReportReceivedDate": "17/04/2024",
+   "Component": "AIR BAGS",
+   "Summary": "TEST FIXTURE 6: recall summary text used only by automated tests.",
+   "Consequence": "TEST FIXTURE consequence text.",
+   "Remedy": "TEST FIXTURE remedy text.",
+   "Notes": "",
+   "ModelYear": "2022",
+   "Make": "CHEVROLET",
+   "Model": "EQUINOX",
+   "_make": "CHEVROLET",
+   "_model": "EQUINOX",
+   "_year": 2022
+  },
+  {
+   "Manufacturer": "General Motors, LLC",
+   "NHTSACampaignNumber": "25V149000",
+   "parkIt": false,
+   "parkOutSide": false,
+   "overTheAirUpdate": false,
+   "ReportReceivedDate": "02/02/2025",
+   "Component": "STEERING",
+   "Summary": "TEST FIXTURE 7: recall summary text used only by automated tests.",
+   "Consequence": "TEST FIXTURE consequence text.",
+   "Remedy": "TEST FIXTURE remedy text.",
+   "Notes": "",
+   "ModelYear": "2023",
+   "Make": "CHEVROLET",
+   "Model": "SILVERADO 1500",
+   "_make": "CHEVROLET",
+   "_model": "SILVERADO 1500",
+   "_year": 2023
+  },
+  {
+   "Manufacturer": "General Motors, LLC",
+   "NHTSACampaignNumber": "22V156000",
+   "parkIt": false,
+   "parkOutSide": false,
+   "overTheAirUpdate": true,
+   "ReportReceivedDate": "14/07/2022",
+   "Component": "ELECTRICAL SYSTEM",
+   "Summary": "TEST FIXTURE 8: recall summary text used only by automated tests.",
+   "Consequence": "TEST FIXTURE consequence text.",
+   "Remedy": "TEST FIXTURE remedy text.",
+   "Notes": "",
+   "ModelYear": "2024",
+   "Make": "GMC",
+   "Model": "SIERRA 1500",
+   "_make": "GMC",
+   "_model": "SIERRA 1500",
+   "_year": 2024
+  },
+  {
+   "Manufacturer": "General Motors, LLC",
+   "NHTSACampaignNumber": "23V163000",
+   "parkIt": false,
+   "parkOutSide": false,
+   "overTheAirUpdate": false,
+   "ReportReceivedDate": "03/04/2023",
+   "Component": "SERVICE BRAKES, HYDRAULIC",
+   "Summary": "TEST FIXTURE 9: recall summary text used only by automated tests.",
+   "Consequence": "TEST FIXTURE consequence text.",
+   "Remedy": "TEST FIXTURE remedy text.",
+   "Notes": "",
+   "ModelYear": "2025",
+   "Make": "BUICK",
+   "Model": "ENCLAVE",
+   "_make": "BUICK",
+   "_model": "ENCLAVE",
+   "_year": 2025
+  },
+  {
+   "Manufacturer": "General Motors, LLC",
+   "NHTSACampaignNumber": "24V170000",
+   "parkIt": false,
+   "parkOutSide": false,
+   "overTheAirUpdate": false,
+   "ReportReceivedDate": "03/09/2024",
+   "Component": "SEAT BELTS",
+   "Summary": "TEST FIXTURE 10: recall summary text used only by automated tests.",
+   "Consequence": "TEST FIXTURE consequence text.",
+   "Remedy": "TEST FIXTURE remedy text.",
+   "Notes": "",
+   "ModelYear": "2021",
+   "Make": "CADILLAC",
+   "Model": "LYRIQ",
+   "_make": "CADILLAC",
+   "_model": "LYRIQ",
+   "_year": 2021
+  },
+  {
+   "Manufacturer": "General Motors, LLC",
+   "NHTSACampaignNumber": "25V177000",
+   "parkIt": false,
+   "parkOutSide": false,
+   "overTheAirUpdate": false,
+   "ReportReceivedDate": "14/01/2025",
+   "Component": "POWER TRAIN",
+   "Summary": "TEST FIXTURE 11: recall summary text used only by automated tests.",
+   "Consequence": "TEST FIXTURE consequence text.",
+   "Remedy": "TEST FIXTURE remedy text.",
+   "Notes": "",
+   "ModelYear": "2022",
+   "Make": "CHEVROLET",
+   "Model": "BOLT EV",
+   "_make": "CHEVROLET",
+   "_model": "BOLT EV",
+   "_year": 2022
+  },
+  {
+   "Manufacturer": "General Motors, LLC",
+   "NHTSACampaignNumber": "22V184000",
+   "parkIt": false,
+   "parkOutSide": false,
+   "overTheAirUpdate": true,
+   "ReportReceivedDate": "27/10/2022",
+   "Component": "AIR BAGS",
+   "Summary": "TEST FIXTURE 12: recall summary text used only by automated tests.",
+   "Consequence": "TEST FIXTURE consequence text.",
+   "Remedy": "TEST FIXTURE remedy text.",
+   "Notes": "",
+   "ModelYear": "2023",
+   "Make": "CHEVROLET",
+   "Model": "EQUINOX",
+   "_make": "CHEVROLET",
+   "_model": "EQUINOX",
+   "_year": 2023
+  },
+  {
+   "Manufacturer": "General Motors, LLC",
+   "NHTSACampaignNumber": "23V191000",
+   "parkIt": false,
+   "parkOutSide": false,
+   "overTheAirUpdate": false,
+   "ReportReceivedDate": "04/04/2023",
+   "Component": "STEERING",
+   "Summary": "TEST FIXTURE 13: recall summary text used only by automated tests.",
+   "Consequence": "TEST FIXTURE consequence text.",
+   "Remedy": "TEST FIXTURE remedy text.",
+   "Notes": "",
+   "ModelYear": "2024",
+   "Make": "CHEVROLET",
+   "Model": "SILVERADO 1500",
+   "_make": "CHEVROLET",
+   "_model": "SILVERADO 1500",
+   "_year": 2024
+  }
+ ],
+ "complaints": [
+  {
+   "odiNumber": 11500000,
+   "manufacturer": "General Motors, LLC",
+   "crash": true,
+   "fire": false,
+   "numberOfInjuries": 1,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "11/14/2023",
+   "dateComplaintFiled": "11/15/2023",
+   "vin": "1GNAXUEV0L",
+   "components": "ELECTRICAL SYSTEM",
+   "summary": "TEST FIXTURE 0: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2021",
+     "productMake": "CHEVROLET",
+     "productModel": "EQUINOX",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "CHEVROLET",
+   "_model": "EQUINOX",
+   "_year": 2021
+  },
+  {
+   "odiNumber": 11500001,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/25/2024",
+   "dateComplaintFiled": "10/26/2024",
+   "vin": "1GNAXUEV0L",
+   "components": "SERVICE BRAKES, HYDRAULIC",
+   "summary": "TEST FIXTURE 1: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2022",
+     "productMake": "CHEVROLET",
+     "productModel": "SILVERADO 1500",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "CHEVROLET",
+   "_model": "SILVERADO 1500",
+   "_year": 2022
+  },
+  {
+   "odiNumber": 11500002,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "01/20/2025",
+   "dateComplaintFiled": "01/21/2025",
+   "vin": "1GNAXUEV0L",
+   "components": "SEAT BELTS",
+   "summary": "TEST FIXTURE 2: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2023",
+     "productMake": "GMC",
+     "productModel": "SIERRA 1500",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "GMC",
+   "_model": "SIERRA 1500",
+   "_year": 2023
+  },
+  {
+   "odiNumber": 11500003,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "01/17/2023",
+   "dateComplaintFiled": "01/18/2023",
+   "vin": "1GNAXUEV0L",
+   "components": "POWER TRAIN",
+   "summary": "TEST FIXTURE 3: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BUICK",
+     "productModel": "ENCLAVE",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "BUICK",
+   "_model": "ENCLAVE",
+   "_year": 2024
+  },
+  {
+   "odiNumber": 11500004,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "05/26/2024",
+   "dateComplaintFiled": "05/27/2024",
+   "vin": "1GNAXUEV0L",
+   "components": "AIR BAGS",
+   "summary": "TEST FIXTURE 4: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "CADILLAC",
+     "productModel": "LYRIQ",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "CADILLAC",
+   "_model": "LYRIQ",
+   "_year": 2025
+  },
+  {
+   "odiNumber": 11500005,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "03/16/2025",
+   "dateComplaintFiled": "03/17/2025",
+   "vin": "1GNAXUEV0L",
+   "components": "STEERING",
+   "summary": "TEST FIXTURE 5: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2021",
+     "productMake": "CHEVROLET",
+     "productModel": "BOLT EV",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "CHEVROLET",
+   "_model": "BOLT EV",
+   "_year": 2021
+  },
+  {
+   "odiNumber": 11500006,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/22/2023",
+   "dateComplaintFiled": "10/23/2023",
+   "vin": "1GNAXUEV0L",
+   "components": "ELECTRICAL SYSTEM",
+   "summary": "TEST FIXTURE 6: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2022",
+     "productMake": "CHEVROLET",
+     "productModel": "EQUINOX",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "CHEVROLET",
+   "_model": "EQUINOX",
+   "_year": 2022
+  },
+  {
+   "odiNumber": 11500007,
+   "manufacturer": "General Motors, LLC",
+   "crash": true,
+   "fire": false,
+   "numberOfInjuries": 1,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/18/2024",
+   "dateComplaintFiled": "09/19/2024",
+   "vin": "1GNAXUEV0L",
+   "components": "SERVICE BRAKES, HYDRAULIC",
+   "summary": "TEST FIXTURE 7: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2023",
+     "productMake": "CHEVROLET",
+     "productModel": "SILVERADO 1500",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "CHEVROLET",
+   "_model": "SILVERADO 1500",
+   "_year": 2023
+  },
+  {
+   "odiNumber": 11500008,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/19/2025",
+   "dateComplaintFiled": "02/20/2025",
+   "vin": "1GNAXUEV0L",
+   "components": "SEAT BELTS",
+   "summary": "TEST FIXTURE 8: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "GMC",
+     "productModel": "SIERRA 1500",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "GMC",
+   "_model": "SIERRA 1500",
+   "_year": 2024
+  },
+  {
+   "odiNumber": 11500009,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "06/16/2023",
+   "dateComplaintFiled": "06/17/2023",
+   "vin": "1GNAXUEV0L",
+   "components": "POWER TRAIN",
+   "summary": "TEST FIXTURE 9: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "BUICK",
+     "productModel": "ENCLAVE",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "BUICK",
+   "_model": "ENCLAVE",
+   "_year": 2025
+  },
+  {
+   "odiNumber": 11500010,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/15/2024",
+   "dateComplaintFiled": "09/16/2024",
+   "vin": "1GNAXUEV0L",
+   "components": "AIR BAGS",
+   "summary": "TEST FIXTURE 10: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2021",
+     "productMake": "CADILLAC",
+     "productModel": "LYRIQ",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "CADILLAC",
+   "_model": "LYRIQ",
+   "_year": 2021
+  },
+  {
+   "odiNumber": 11500011,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/14/2025",
+   "dateComplaintFiled": "10/15/2025",
+   "vin": "1GNAXUEV0L",
+   "components": "STEERING",
+   "summary": "TEST FIXTURE 11: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2022",
+     "productMake": "CHEVROLET",
+     "productModel": "BOLT EV",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "CHEVROLET",
+   "_model": "BOLT EV",
+   "_year": 2022
+  },
+  {
+   "odiNumber": 11500012,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/19/2023",
+   "dateComplaintFiled": "10/20/2023",
+   "vin": "1GNAXUEV0L",
+   "components": "ELECTRICAL SYSTEM",
+   "summary": "TEST FIXTURE 12: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2023",
+     "productMake": "CHEVROLET",
+     "productModel": "EQUINOX",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "CHEVROLET",
+   "_model": "EQUINOX",
+   "_year": 2023
+  },
+  {
+   "odiNumber": 11500013,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "08/26/2024",
+   "dateComplaintFiled": "08/27/2024",
+   "vin": "1GNAXUEV0L",
+   "components": "SERVICE BRAKES, HYDRAULIC",
+   "summary": "TEST FIXTURE 13: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "CHEVROLET",
+     "productModel": "SILVERADO 1500",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "CHEVROLET",
+   "_model": "SILVERADO 1500",
+   "_year": 2024
+  },
+  {
+   "odiNumber": 11500014,
+   "manufacturer": "General Motors, LLC",
+   "crash": true,
+   "fire": false,
+   "numberOfInjuries": 1,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "06/27/2025",
+   "dateComplaintFiled": "06/28/2025",
+   "vin": "1GNAXUEV0L",
+   "components": "SEAT BELTS",
+   "summary": "TEST FIXTURE 14: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "GMC",
+     "productModel": "SIERRA 1500",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "GMC",
+   "_model": "SIERRA 1500",
+   "_year": 2025
+  },
+  {
+   "odiNumber": 11500015,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/27/2023",
+   "dateComplaintFiled": "10/28/2023",
+   "vin": "1GNAXUEV0L",
+   "components": "POWER TRAIN",
+   "summary": "TEST FIXTURE 15: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2021",
+     "productMake": "BUICK",
+     "productModel": "ENCLAVE",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "BUICK",
+   "_model": "ENCLAVE",
+   "_year": 2021
+  },
+  {
+   "odiNumber": 11500016,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "06/22/2024",
+   "dateComplaintFiled": "06/23/2024",
+   "vin": "1GNAXUEV0L",
+   "components": "AIR BAGS",
+   "summary": "TEST FIXTURE 16: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2022",
+     "productMake": "CADILLAC",
+     "productModel": "LYRIQ",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "CADILLAC",
+   "_model": "LYRIQ",
+   "_year": 2022
+  },
+  {
+   "odiNumber": 11500017,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "04/18/2025",
+   "dateComplaintFiled": "04/19/2025",
+   "vin": "1GNAXUEV0L",
+   "components": "STEERING",
+   "summary": "TEST FIXTURE 17: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2023",
+     "productMake": "CHEVROLET",
+     "productModel": "BOLT EV",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "CHEVROLET",
+   "_model": "BOLT EV",
+   "_year": 2023
+  },
+  {
+   "odiNumber": 11500018,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "12/20/2023",
+   "dateComplaintFiled": "12/21/2023",
+   "vin": "1GNAXUEV0L",
+   "components": "ELECTRICAL SYSTEM",
+   "summary": "TEST FIXTURE 18: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "CHEVROLET",
+     "productModel": "EQUINOX",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "CHEVROLET",
+   "_model": "EQUINOX",
+   "_year": 2024
+  },
+  {
+   "odiNumber": 11500019,
+   "manufacturer": "General Motors, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/22/2024",
+   "dateComplaintFiled": "02/23/2024",
+   "vin": "1GNAXUEV0L",
+   "components": "SERVICE BRAKES, HYDRAULIC",
+   "summary": "TEST FIXTURE 19: complaint narrative used only by automated tests.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "CHEVROLET",
+     "productModel": "SILVERADO 1500",
+     "manufacturer": "General Motors, LLC"
+    }
+   ],
+   "_make": "CHEVROLET",
+   "_model": "SILVERADO 1500",
+   "_year": 2025
+  }
+ ]
+}

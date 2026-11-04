@@ -1,0 +1,37 @@
+# The metadata the demo catalog starts with: what a real team's catalog usually looks like
+# after a year of growth. Some tables are documented and owned, most are not, and nobody
+# has reviewed the customer tables for personal data yet.
+
+tables:
+  vehicle_safety.recalls:
+    comment: NHTSA safety recall campaigns for GM vehicles, one row per campaign per make, model and model year.
+    tags: {data_owner: safety-data-owners@example.com, steward: ana.ruiz@example.com, classification: public}
+    columns:
+      campaign_number: NHTSA recall campaign number, for example 24V123000.
+      make: Vehicle make as reported to NHTSA.
+      model: Vehicle model as reported to NHTSA.
+      model_year: Model year covered by the campaign.
+      component: NHTSA component category affected by the defect.
+      summary: Plain-language description of the defect.
+      consequence: Safety risk if the defect is not repaired.
+      remedy: Repair the manufacturer will perform.
+      report_received_date: Date NHTSA received the manufacturer's defect report.
+      park_it: NHTSA advises owners not to drive the vehicle until repaired.
+  vehicle_safety.complaints:
+    comment: Owner complaints filed with NHTSA's Office of Defects Investigation for GM vehicles.
+    tags: {steward: ana.ruiz@example.com}
+    columns:
+      odi_number: NHTSA complaint number.
+      filed_date: Date the complaint was filed.
+  fuel_economy.vehicles:
+    tags: {data_owner: emissions-compliance@example.com, steward: marcus.lee@example.com, classification: public}
+    columns:
+      vehicle_id: EPA vehicle record id.
+      combined_mpg: Combined city and highway MPG (MPGe for electric vehicles).
+  customer_care.owner_contacts:
+    comment: Contact details for vehicle owners, used to send recall notices.
+    columns:
+      customer_id: Internal customer number.
+    column_tags:
+      customer_id: {classification: internal}
+  dealer_service.service_appointments: {}

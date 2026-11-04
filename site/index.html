@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catalog Steward Kit</title>
+<meta name="description" content="Review PII tags, owners, descriptions and quality checks for a Unity Catalog, then download the SQL to apply your decisions in Databricks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Crect width=%2716%27 height=%2716%27 fill=%27%231f5e4b%27/%3E%3Cpath d=%27M4 8l3 3 5-6%27 stroke=%27white%27 stroke-width=%272%27 fill=%27none%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-repo="https://github.com/AlexaGonzalesTuesta/catalog-steward-kit">
+<div id="offline" class="banner" hidden role="status">You are offline. Your decisions stay saved in this browser, and the last loaded scan is still available.</div>
+
+<header class="topbar">
+  <div class="brand">Catalog Steward Kit</div>
+  <div class="catalog" id="catalogLabel"></div>
+  <div class="scanned" id="scannedLabel"></div>
+</header>
+
+<main id="app" aria-live="polite">
+  <p class="state" id="loading">Loading the latest catalog scan…</p>
+</main>
+
+<template id="tpl-error">
+  <section class="state error" role="alert">
+    <h2>The catalog scan could not be loaded.</h2>
+    <p class="detail"></p>
+    <button type="button" class="btn" data-action="retry">Try again</button>
+  </section>
+</template>
+
+<script src="app.js"></script>
+</body>
+</html>

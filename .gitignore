@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+demo/catalog.duckdb
+demo/catalog.duckdb.wal
+data/synthetic/
+site/data/snapshot.json
+site/data/evals.json
+site/demo.gif
+site/screenshot.png
+evals/results.json
+.env
