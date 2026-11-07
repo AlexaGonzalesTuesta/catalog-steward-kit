@@ -6,8 +6,6 @@ Finds the governance gaps in a Databricks Unity Catalog (missing owners, missing
 
 **[Open the live demo](https://alexagonzalestuesta.github.io/catalog-steward-kit/)**: a catalog of real NHTSA recall and complaint data and EPA fuel economy data for GM vehicles, plus two synthetic customer tables. Your decisions stay in your own browser.
 
-![Steward confirming PII tags, assigning an owner, then checking catalog health and quality](https://alexagonzalestuesta.github.io/catalog-steward-kit/demo.gif)
-
 ## Why this exists
 
 Every data catalog grows faster than its documentation. After a year, most tables have no accountable owner, no description, and nobody has checked whether they hold personal data. Data stewards usually find these gaps by clicking through the catalog table by table, and enterprise tools that automate it (Atlan, Immuta, Anomalo) cost far more than a small team can spend.
