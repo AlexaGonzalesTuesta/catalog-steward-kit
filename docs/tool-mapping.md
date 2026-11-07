@@ -9,7 +9,7 @@ Enterprise teams usually split this work across several products. This kit does 
 | Human approval before tagging | Confirm PII / Not PII, then SQL | Approval workflows | Policy approvals | | |
 | Write tags and comments | `ALTER TABLE ... SET TAGS`, `COMMENT ON` | Syncs tags to Databricks | Reads tags for policies | | Unity Catalog tags |
 | Quality rules and failing rows | `governance.yml` rules run as SQL | Shows results from DQ tools | | Rules, anomaly detection, root cause | Lakeflow expectations, data quality monitoring |
-| Steward onboarding and readiness | Stewards tab, quick start | Personas, onboarding | | | |
+| Steward onboarding and readiness | Stewards page, quick start | Personas, onboarding | | | |
 | Governance metrics | KPI strip, catalog health | Reporting center | Audit | Monitoring | System tables |
 
 ## What a production version adds

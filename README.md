@@ -31,11 +31,11 @@ This kit gives a governance team the core of that workflow on the platform they 
 ## 2-minute tour
 
 1. Open the [live demo](https://alexagonzalestuesta.github.io/catalog-steward-kit/). The work queue lists every open item, highest priority first.
-2. Click **confirm a suggested PII tag**. Read the evidence for `customer_care.owner_contacts.email`, look at the masked samples, and click **Confirm PII**. The **PII reviews open** count drops.
+2. The first item in the **Work queue** is a suggested PII tag. Read the evidence for `customer_care.owner_contacts.email`, look at the masked samples, and click **Confirm PII**. The **PII reviews open** count drops.
 3. Find `dealer_service.service_appointments.customer_notes`. It is a free-text field, and the kit found phone numbers and emails typed into some notes. This is the kind of PII that column-name rules miss.
-4. Click **assign a missing data owner**. The domain's default owner is filled in. Click **Set owner**.
-5. Click **open a failing quality check**. The query shows the 7 service appointments that point to recall campaigns that do not exist.
-6. Open **Catalog health** to see each table's description, owner, classification, PII review and quality status update as you decide.
+4. Open the **···** menu (top right) and pick **Assign a missing data owner**. The domain's default owner is filled in. Click **Set owner**.
+5. From the same menu, pick **Open a failing quality check**. The query shows the 7 service appointments that point to recall campaigns that do not exist.
+6. Open **Catalog health** in the left menu to see each table's description, owner, classification, PII review and quality status update as you decide.
 7. Click **Download SQL**. The file contains one statement per decision, ready to run in a Databricks SQL editor.
 
 ## Results

@@ -7,26 +7,26 @@
 <meta name="description" content="Review PII tags, owners, descriptions and quality checks for a Unity Catalog, then download the SQL to apply your decisions in Databricks.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Crect width=%2716%27 height=%2716%27 fill=%27%231f5e4b%27/%3E%3Cpath d=%27M4 8l3 3 5-6%27 stroke=%27white%27 stroke-width=%272%27 fill=%27none%27/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Crect width=%2716%27 height=%2716%27 rx=%273%27 fill=%27%23c2461a%27/%3E%3Cpath d=%27M4 8l3 3 5-6%27 stroke=%27white%27 stroke-width=%272%27 fill=%27none%27/%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body data-repo="https://github.com/AlexaGonzalesTuesta/catalog-steward-kit">
-<div id="offline" class="banner" hidden role="status">You are offline. Your decisions stay saved in this browser, and the last loaded scan is still available.</div>
-
 <header class="topbar">
-  <div class="brand">Catalog Steward Kit</div>
-  <div class="catalog" id="catalogLabel"></div>
-  <div class="scanned" id="scannedLabel"></div>
+  <div class="product"><span class="logo" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 8l3 3 5-6" stroke="#fff" stroke-width="2" fill="none"/></svg></span>Catalog Steward Kit</div>
+  <div class="workspace" id="catalogLabel"></div>
+  <div class="top-right"><span id="scannedLabel"></span><div class="more" id="more"></div></div>
 </header>
-
-<main id="app" aria-live="polite">
-  <p class="state" id="loading">Loading the latest catalog scan…</p>
-</main>
+<div id="offline" class="banner" hidden role="status">Offline. Your decisions stay saved in this browser.</div>
+<div class="shell">
+  <nav class="side" id="nav" aria-label="Pages"></nav>
+  <main id="app" aria-live="polite"><p class="state loading">Loading the latest catalog scan…</p></main>
+</div>
+<dialog id="about" aria-labelledby="aboutTitle"></dialog>
 
 <template id="tpl-error">
   <section class="state error" role="alert">
-    <h2>The catalog scan could not be loaded.</h2>
+    <h1>The catalog scan could not be loaded.</h1>
     <p class="detail"></p>
     <button type="button" class="btn" data-action="retry">Try again</button>
   </section>
